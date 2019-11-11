@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  background-image: linear-gradient(#bfcdd0, #dde9ed);
+  padding: 0 35px 40px 45px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button--delete {
+  width: 75px;
+  height: 30px;
+  margin: 38px 0 20px 0;
+  border-radius: 15px;
+  border: solid 1px #ffffff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #54585a;
+}
+
+.trash__icon {
+  padding-right: 8px;
+}
+
+.card {
+  width: 240px;
+  height: 329px;
+  border-radius: 2px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
+    color: #114e4e;
+    padding: 21px 14px 4px 20px;
+  }
+
+  &__job {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.25;
+    color: #54585a;
+    padding: 0 52px 10px 20px;
+  }
+
+  &__items {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 32px);
+    grid-column-gap: 10px;
+    margin: 10px 0 12px 20px;
+  }
+
+  &__item {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: solid 2px #a2deaf;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  &__link {
+    color: #114e4e;
+  }
+}
