@@ -31,19 +31,23 @@
 }
 
 .card {
-  width: 240px;
-  height: 329px;
   border-radius: 2px;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
   background-color: #ffffff;
   font-family: "Montserrat", sans-serif;
+
+  &__border-left {
+    border-left: 5px solid #114e4e;
+    margin-top: 21px;
+    margin-bottom: 10px;
+  }
 
   &__title {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.11;
     color: #114e4e;
-    padding: 21px 14px 4px 20px;
+    padding: 0 14px 4px 20px;
   }
 
   &__job {
@@ -51,10 +55,10 @@
     font-weight: normal;
     line-height: 1.25;
     color: #54585a;
-    padding: 0 52px 10px 20px;
+    padding: 0 0 10px 20px;
   }
 
-  &__items {
+  &__list {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4, 32px);
