@@ -2,6 +2,9 @@
 @import "core/reset";
 /* VARIABLES */
 @import "core/variables";
+html {
+  font-size: 62.5%;
+}
 /* HEADER */
 @import "layouts/header";
 /* MAIN LANDING */
