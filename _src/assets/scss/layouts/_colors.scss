@@ -1,12 +1,11 @@
 /*Section container*/
 
 .section-design {
-  margin: 30px 15px;
+  margin: 30px 30px;
 }
 
 /*Title section design*/
 .container-title-section-design {
-  border: 3px solid pink;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,7 +13,6 @@
 }
 
 .container-title-section_items {
-  border: 3px solid green;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -27,7 +25,7 @@
 }
 
 .title-section-design {
-  padding-left: 15px;
+  padding-left: 10px;
   font-family: OpenSans-SemiBold;
   font-size: 18px;
   color: #54585a;
@@ -35,7 +33,6 @@
 }
 
 .icon-down {
-  border: 3px solid blue;
   width: 21px;
   height: 18px;
   color: #e17334;
@@ -44,10 +41,10 @@
 /*Section design: colors*/
 
 .container-design-color {
-  border: 3px solid goldenrod;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 22px;
 }
 
 .title-design-color {
@@ -59,7 +56,6 @@
 }
 
 .container-color-options {
-  border: 3px solid purple;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -69,7 +65,6 @@
 
 .option1 {
   margin-bottom: 10px;
-  border: 3px solid black;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -103,7 +98,6 @@
 
 .option2 {
   margin-bottom: 10px;
-  border: 3px solid grey;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -136,7 +130,6 @@
 /*Palette - option3*/
 
 .option3 {
-  border: 3px solid lightcoral;
   display: flex;
   flex-direction: row;
   align-items: center;
