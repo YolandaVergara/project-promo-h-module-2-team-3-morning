@@ -1,0 +1,160 @@
+/*Section container*/
+
+.section-design {
+  margin: 30px 30px;
+}
+
+/*Title section design*/
+.container-title-section-design {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-title-section_items {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.icon-design {
+  width: 21px;
+  height: 18px;
+  color: #e17334;
+}
+
+.title-section-design {
+  padding-left: 10px;
+  font-family: OpenSans-SemiBold;
+  font-size: 18px;
+  color: #54585a;
+  text-transform: uppercase;
+}
+
+.icon-down {
+  width: 21px;
+  height: 18px;
+  color: #e17334;
+}
+
+/*Section design: colors*/
+
+.container-design-color {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.title-design-color {
+  font-size: 14px;
+  color: #54585a;
+  font-family: OpenSans;
+  text-transform: uppercase;
+  margin-left: 25px;
+}
+
+.container-color-options {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/*Palette - option1*/
+
+.option1 {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.palette-option1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.palette-option1_item1 {
+  margin-left: 10px;
+  background: #114e4e;
+  width: 30px;
+  height: 25px;
+}
+
+.palette-option1_item2 {
+  background: #438792;
+  width: 30px;
+  height: 25px;
+}
+
+.palette-option1_item3 {
+  background: #a2deaf;
+  width: 30px;
+  height: 25px;
+}
+
+/*Palette - option2*/
+
+.option2 {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.palette-option2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.palette-option2_item1 {
+  margin-left: 10px;
+  background: #420101;
+  width: 30px;
+  height: 25px;
+}
+
+.palette-option2_item2 {
+  background: #bd1010;
+  width: 30px;
+  height: 25px;
+}
+
+.palette-option2_item3 {
+  background: #e95626;
+  width: 30px;
+  height: 25px;
+}
+
+/*Palette - option3*/
+
+.option3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.palette-option3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.palette-option3_item1 {
+  margin-left: 10px;
+  background: #3e5b65;
+  width: 30px;
+  height: 25px;
+}
+
+.palette-option3_item2 {
+  background: #eab052;
+  width: 30px;
+  height: 25px;
+}
+
+.palette-option3_item3 {
+  background: #a0c0cf;
+  width: 30px;
+  height: 25px;
+}
