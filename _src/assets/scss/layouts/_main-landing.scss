@@ -16,19 +16,19 @@
     font-family: $fontprimary;
     font-size: 1.92rem;
     font-weight: 900;
-    color: $primarycolor;
+    color: $firstcolor;
     text-align: center;
   }
   &__subtitle {
     font-family: $fonttertiary;
     font-size: 1.28rem;
-    color: $secondarycolor;
+    color: $secondcolor;
     width: 26.48rem;
     text-align: center;
     padding-bottom: 1.78rem;
   }
   &__menu {
-    border: solid 0.16rem $primarycolor;
+    border: solid 0.16rem $firstcolor;
     opacity: 0.21;
     display: flex;
     padding: 1.5rem 2rem 1rem 2rem;
@@ -42,7 +42,7 @@
         font-size: 2rem;
         width: 3.2rem;
         height: 2.6rem;
-        color: $primarycolor;
+        color: $firstcolor;
       }
     }
   }
