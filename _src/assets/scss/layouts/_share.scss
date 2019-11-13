@@ -2,18 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-    border: 2px solid red;
-    display: flex;
-    justify-content: space-between;
-    &__items {
-      display: flex;
-    }
-  }
 }
 
 .share__button {
-  background-color: $primarycolor;
+  background-color: $firstcolor;
   width: 19.9rem;
   height: 5rem;
   display: flex;
@@ -23,10 +15,14 @@
   font-family: $fonttertiary;
   font-size: 1.8rem;
   border-radius: 1.2rem;
+  margin-top: 3rem;
+}
+.far {
+  width: 2.5rem;
+  height: 2.2rem;
 }
 
 .share__result {
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +36,7 @@
   &__url {
     font-size: 1.2rem;
     font-family: $fonttertiary;
-    color: $primarycolor;
+    color: $firstcolor;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
   }
