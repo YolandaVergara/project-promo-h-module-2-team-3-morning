@@ -45,21 +45,21 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2.2rem;
-}
 
-.colour__title {
-  font-size: 1.4rem;
-  color: #54585a;
-  font-family: $fonttertiary;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin-left: 2.5rem;
-}
+  &__title {
+    font-size: 1.4rem;
+    color: #54585a;
+    font-family: $fonttertiary;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-left: 2.5rem;
+  }
 
-.colour__palettes {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+  &__palettes {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
 }
 
 /*Palette - option1*/
@@ -74,25 +74,25 @@
 .palette1 {
   display: flex;
   flex-direction: row;
-}
 
-.palette1_item1 {
-  margin-left: 1rem;
-  background: $secondcolor;
-  width: 3rem;
-  height: 2.5rem;
-}
+  &__item1 {
+    margin-left: 1rem;
+    background: $secondcolor;
+    width: 3rem;
+    height: 2.5rem;
+  }
 
-.palette1_item2 {
-  background: #438792;
-  width: 3rem;
-  height: 2.5rem;
-}
+  &__item2 {
+    background: #438792;
+    width: 3rem;
+    height: 2.5rem;
+  }
 
-.palette1_item3 {
-  background: $fifthcolor;
-  width: 3rem;
-  height: 2.5rem;
+  &__item3 {
+    background: $fifthcolor;
+    width: 3rem;
+    height: 2.5rem;
+  }
 }
 
 /*Palette - option2*/
@@ -107,25 +107,25 @@
 .palette2 {
   display: flex;
   flex-direction: row;
-}
 
-.palette2_item1 {
-  margin-left: 1rem;
-  background: #420101;
-  width: 3rem;
-  height: 2.5rem;
-}
+  &__item1 {
+    margin-left: 1rem;
+    background: #420101;
+    width: 3rem;
+    height: 2.5rem;
+  }
 
-.palette2_item2 {
-  background: #bd1010;
-  width: 3rem;
-  height: 2.5rem;
-}
+  &__item2 {
+    background: #bd1010;
+    width: 3rem;
+    height: 2.5rem;
+  }
 
-.palette2_item3 {
-  background: #e95626;
-  width: 3rem;
-  height: 2.5rem;
+  &__item3 {
+    background: #e95626;
+    width: 3rem;
+    height: 2.5rem;
+  }
 }
 
 /*Palette - option3*/
@@ -139,23 +139,23 @@
 .palette3 {
   display: flex;
   flex-direction: row;
-}
 
-.palette3_item1 {
-  margin-left: 1rem;
-  background: #3e5b65;
-  width: 3rem;
-  height: 2.5rem;
-}
+  &__item1 {
+    margin-left: 1rem;
+    background: #3e5b65;
+    width: 3rem;
+    height: 2.5rem;
+  }
 
-.palette3_item2 {
-  background: #eab052;
-  width: 3rem;
-  height: 2.5rem;
-}
+  &__item2 {
+    background: #eab052;
+    width: 3rem;
+    height: 2.5rem;
+  }
 
-.palette3_item3 {
-  background: #a0c0cf;
-  width: 3rem;
-  height: 2.5rem;
+  &__item3 {
+    background: #a0c0cf;
+    width: 3rem;
+    height: 2.5rem;
+  }
 }
