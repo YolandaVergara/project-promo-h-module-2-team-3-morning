@@ -5,36 +5,37 @@
 }
 
 /*Title section design*/
-.container__collapse {
+
+.collapse {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  &-items {
+  &__items {
     display: flex;
     flex-direction: row;
     text-align: center;
+
+    &-icon {
+      font-size: 1.8rem;
+      color: $firstcolor;
+    }
+
+    &-title {
+      padding-left: 1rem;
+      font-family: $fonttertiary;
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: $fourthcolor;
+      text-transform: uppercase;
+    }
   }
 
-  &-icon {
+  &__icon-down {
     font-size: 1.8rem;
-    color: $firstcolor;
+    color: $fourthcolor;
   }
-}
-
-.container__collapse-title {
-  padding-left: 1rem;
-  font-family: $fonttertiary;
-  font-weight: bold;
-  font-size: 1.8rem;
-  color: $fourthcolor;
-  text-transform: uppercase;
-}
-
-.icon-down {
-  font-size: 1.8rem;
-  color: $fourthcolor;
 }
 
 /*Section design: colors*/
