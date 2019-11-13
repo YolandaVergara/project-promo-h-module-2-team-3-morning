@@ -2,14 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
-    border: 2px solid red;
-    display: flex;
-    justify-content: space-between;
-    &__items {
-      display: flex;
-    }
-  }
 }
 
 .share__button {
@@ -23,10 +15,14 @@
   font-family: $fonttertiary;
   font-size: 1.8rem;
   border-radius: 1.2rem;
+  margin-top: 3rem;
+}
+.far {
+  width: 2.5rem;
+  height: 2.2rem;
 }
 
 .share__result {
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
