@@ -1,0 +1,161 @@
+/*Section container*/
+
+.design {
+  margin: 3rem 3rem;
+}
+
+/*Title section design*/
+
+.collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    &-icon {
+      font-size: 1.8rem;
+      color: $firstcolor;
+    }
+
+    &-title {
+      padding-left: 1rem;
+      font-family: $fonttertiary;
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: $fourthcolor;
+      text-transform: uppercase;
+    }
+  }
+
+  &__icon-down {
+    font-size: 1.8rem;
+    color: $fourthcolor;
+  }
+}
+
+/*Section design: colors*/
+
+.colour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2.2rem;
+
+  &__title {
+    font-size: 1.4rem;
+    color: #54585a;
+    font-family: $fonttertiary;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-left: 2.5rem;
+  }
+
+  &__palettes {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+/*Palette - option1*/
+
+.option1 {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.palette1 {
+  display: flex;
+  flex-direction: row;
+
+  &__item1 {
+    margin-left: 1rem;
+    background: $secondcolor;
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  &__item2 {
+    background: #438792;
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  &__item3 {
+    background: $fifthcolor;
+    width: 3rem;
+    height: 2.5rem;
+  }
+}
+
+/*Palette - option2*/
+
+.option2 {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.palette2 {
+  display: flex;
+  flex-direction: row;
+
+  &__item1 {
+    margin-left: 1rem;
+    background: #420101;
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  &__item2 {
+    background: #bd1010;
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  &__item3 {
+    background: #e95626;
+    width: 3rem;
+    height: 2.5rem;
+  }
+}
+
+/*Palette - option3*/
+
+.option3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.palette3 {
+  display: flex;
+  flex-direction: row;
+
+  &__item1 {
+    margin-left: 1rem;
+    background: #3e5b65;
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  &__item2 {
+    background: #eab052;
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  &__item3 {
+    background: #a0c0cf;
+    width: 3rem;
+    height: 2.5rem;
+  }
+}
