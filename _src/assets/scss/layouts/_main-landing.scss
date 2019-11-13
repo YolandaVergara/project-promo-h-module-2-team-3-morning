@@ -38,12 +38,9 @@
     }
   }
   &__menu {
-    <<<<<<<HEAD
-    border: solid 0.16rem $primarycolor;
     // opacity: 0.21;
-    =======border: solid 0.16rem $firstcolor;
+    border: solid 0.16rem $firstcolor;
     opacity: 0.21;
-    >>>>>>>979445c2debc8f132e1f01a211892a7dbce4771c
     display: flex;
     justify-content: center;
     align-items: center;
