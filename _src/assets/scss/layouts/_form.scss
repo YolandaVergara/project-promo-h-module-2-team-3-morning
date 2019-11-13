@@ -1,24 +1,56 @@
-.form-section {
+.container-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 10px 19px 20px 20px;
-  &__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
+  padding: 0.5rem 0rem 2.3rem 0rem;
 }
+
 .form {
-  border: brown solid 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-input {
-  border: blueviolet solid 1px;
-  display: block;
-}
-label {
-  border: blueviolet solid 1px;
+  &__label {
+    font-family: $fonttertiary;
+    color: $secondcolor;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+  }
+
+  &__input {
+    height: 3rem;
+    color: #c5c5c5;
+    border: #a2deaf 1px solid;
+    padding-left: 0.9rem;
+    font-family: $fonttertiary;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    width: 100%;
+    display: flex;
+
+    &--btn {
+      width: 14rem;
+      padding: 0.3rem 2.2rem 0.7rem 2.2rem;
+      background-color: $firstcolor;
+      height: 3rem;
+      border-radius: 0.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--p {
+      color: white;
+      font-size: 1.4rem;
+      font-family: $fonttertiary;
+    }
+
+    &--min {
+      border: 1px solid #a2deaf;
+      margin-left: 2rem;
+      width: 3rem;
+      height: 3rem;
+    }
+  }
 }
