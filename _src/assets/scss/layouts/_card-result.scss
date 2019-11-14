@@ -9,6 +9,7 @@
 
   @media all and (min-width: 768px) {
     padding: 0 4.4rem 26rem 4.5rem;
+    border-radius: 6px;
   }
 }
 
@@ -35,6 +36,7 @@
 }
 
 .card {
+  width: 240px;
   border-radius: 0.2rem;
   box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.2),
     0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.35);
