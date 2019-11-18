@@ -163,37 +163,57 @@
 /*Change color*/
 
 .js-card-palette1 {
-  color: #114e4e;
+
+  .js-card__title {
+    color: #114e4e;
+  }
+  .js-card__link{
+    color: #114e4e;
+  }
 
   .js-card__border-left {
     border-left: 0.5 rem solid #438792;
   }
+
   .js-card__item {
     border: solid 0.2rem #a2deaf;
-    color: #114e4e;
   }
 }
 
-.js-card.palette2 {
-  color: #420101;
+.js-card-palette2 {
+ 
+  .js-card__title {
+    color: #420101;
+  }
+  .js-card__link{
+    color: #420101;
+  }
 
   .js-card__border-left {
     border-left: 0.5 rem solid #bd1010;
   }
+
   .js-card__item {
     border: solid 0.2rem #e95626;
-    color: #420101;
   }
 }
+  
 
-.js-card.palette3 {
-  color: #3e5b65;
+
+.js-card-palette3 {
+
+  .js-card__title {
+    color: #3e5b65;
+  }
+  .js-card__link{
+    color: #3e5b65;
+  }
 
   .js-card__border-left {
     border-left: 0.5 rem solid #eab052;
   }
+
   .js-card__item {
     border: solid 0.2rem #a0c0cf;
-    color: #3e5b65;
   }
 }
