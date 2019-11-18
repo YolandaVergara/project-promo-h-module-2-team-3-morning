@@ -159,3 +159,49 @@
     height: 2.5rem;
   }
 }
+@mixin paletteOne() {
+  .card__title{
+  color: #114e4e;
+  }
+  .card__link{
+  color: #114e4e;
+  }
+  .card__border-left{
+  color: #438792;
+  }
+  .card__item{
+  color: #a2deaf;
+  }
+  }
+  
+  @mixin paletteTwo() {
+  .card__title{
+  color: #420101;
+  }
+  .card__link{
+  color: #420101;
+  }
+  .card__border-left{
+  color: #bd1010;
+  }
+  .card__item{
+  color: #e95626;
+  }
+  }
+  
+  @mixin paletteThree() {
+  .card__title{
+  color: #3e5b65;
+  }
+  .card__link{
+  color: #3e5b65;
+  }
+  .card__border-left{
+  color: #eab052;
+  }
+  .card__item{
+  color: #a0c0cf;
+  }
+  }
+  
+  
