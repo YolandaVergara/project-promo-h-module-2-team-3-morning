@@ -1,8 +1,5 @@
 .result {
-  background-image: linear-gradient(
-    $colorBackgroundPrimary,
-    $colorBackgroundSecondary
-  );
+  background-image: linear-gradient($colorBackgroundPrimary, $colorBackgroundSecondary);
   padding: 0 3.5rem 4rem 4.5rem;
   display: flex;
   flex-direction: column;
@@ -38,8 +35,7 @@
 .card {
   width: 240px;
   border-radius: 0.2rem;
-  box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.2),
-    0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0.1rem 1rem 0 rgba(0, 0, 0, 0.2), 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.35);
   background-color: $thirdcolor;
   font-family: $fontsecondary;
 

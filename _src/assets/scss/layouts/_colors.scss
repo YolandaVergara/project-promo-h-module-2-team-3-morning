@@ -159,49 +159,41 @@
     height: 2.5rem;
   }
 }
-@mixin paletteOne() {
-  .card__title{
+
+/*Change color*/
+
+.js-card-palette1 {
   color: #114e4e;
+
+  .js-card__border-left {
+    border-left: 0.5 rem solid #438792;
   }
-  .card__link{
-  color: #114e4e;
+  .js-card__item {
+    border: solid 0.2rem #a2deaf;
+    color: #114e4e;
   }
-  .card__border-left{
-  color: #438792;
-  }
-  .card__item{
-  color: #a2deaf;
-  }
-  }
-  
-  @mixin paletteTwo() {
-  .card__title{
+}
+
+.js-card.palette2 {
   color: #420101;
+
+  .js-card__border-left {
+    border-left: 0.5 rem solid #bd1010;
   }
-  .card__link{
-  color: #420101;
+  .js-card__item {
+    border: solid 0.2rem #e95626;
+    color: #420101;
   }
-  .card__border-left{
-  color: #bd1010;
-  }
-  .card__item{
-  color: #e95626;
-  }
-  }
-  
-  @mixin paletteThree() {
-  .card__title{
+}
+
+.js-card.palette3 {
   color: #3e5b65;
+
+  .js-card__border-left {
+    border-left: 0.5 rem solid #eab052;
   }
-  .card__link{
-  color: #3e5b65;
+  .js-card__item {
+    border: solid 0.2rem #a0c0cf;
+    color: #3e5b65;
   }
-  .card__border-left{
-  color: #eab052;
-  }
-  .card__item{
-  color: #a0c0cf;
-  }
-  }
-  
-  
+}
