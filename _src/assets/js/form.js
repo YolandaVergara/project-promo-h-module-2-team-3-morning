@@ -22,7 +22,7 @@ function changeCard() {
     cardJobEle.innerHTML = "Front-end developer";
   }
   const emailValue = emailEle.value;
-  cardEmailEle.href = `"mailto: ${emailValue}"`;
+  cardEmailEle.href = `mailto: ${emailValue}`;
 }
 
 nameEle.addEventListener("keyup", changeCard);
