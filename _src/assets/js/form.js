@@ -7,11 +7,12 @@ const cardJobEle = document.querySelector(".js-cardJob");
 const emailEle = document.querySelector(".js-email");
 const cardEmailEle = document.querySelector(".js-cardEmail");
 const phoneEle = document.querySelector(".js-phone");
-const cardPhoneEle = document.querySelector(".js-cardPhone");
+let cardPhoneEle = document.querySelector(".js-cardPhone");
 const linkedinEle = document.querySelector(".js-linkedin");
 const cardLinkedinEle = document.querySelector(".js-cardLinkedin");
 const githubEle = document.querySelector(".js-github");
 const cardGithubEle = document.querySelector(".js-cardGithub");
+const liEle = document.querySelector(".card__item");
 const empty = "";
 function changeCard() {
   const nameValue = nameEle.value;
@@ -21,30 +22,40 @@ function changeCard() {
     cardNameEle.innerHTML = "Nombre Apellido";
   }
 
-  const jobValue = jobEle.value;
+  let jobValue = jobEle.value;
+
   if (jobValue !== empty) {
     cardJobEle.innerHTML = jobValue;
   } else {
     cardJobEle.innerHTML = "Front-end developer";
   }
 
-  const phoneValue = phoneEle.value;
+  let phoneValue = phoneEle.value;
   if (phoneValue !== empty) {
+    liEle.classList.remove("js-opacity");
     cardPhoneEle = phoneValue;
   } else {
-    //opacidad
+    liEle.classList.add("js-opacity");
   }
 
-  const emailValue = emailEle.value;
-  cardEmailEle.href = `mailto: ${emailValue}`;
+  //   let emailValue = emailEle.value; {
 
-  const linkedinValue = linkedinEle.value;
-  cardLinkedinEle.href = linkedinValue;
+  //   if (emailValue !== empty) {
 
-  const githubValue = githubEle.value;
-  cardGithubEle.href = githubValue;
+  //   cardEmailEle.href = `mailto: ${emailValue}`;
+  // }   else {
+  //   }
+
+  //   let linkedinValue = linkedinEle.value;
+  //   cardLinkedinEle.href = linkedinValue;
+
+  //   let githubValue = githubEle.value;
+  //   cardGithubEle.href = githubValue;*/
 }
 
 nameEle.addEventListener("keyup", changeCard);
 jobEle.addEventListener("keyup", changeCard);
 emailEle.addEventListener("keyup", changeCard);
+phoneEle.addEventListener("keyup", changeCard);
+linkedinEle.addEventListener("keyup", changeCard);
+githubEle.addEventListener("keyup", changeCard);
