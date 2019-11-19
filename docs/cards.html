@@ -6,9 +6,176 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Adalab Web Starter Kit</title>
         <link rel="icon" href="./favicon.png" />
+        <script src="https://kit.fontawesome.com/94776826eb.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,700&display=swap"
+        rel="stylesheet" />
         <link rel="stylesheet" href="./assets/css/main.css" />
     </head>
     
-    <body></body>
+    <body>
+        <header class="header"> <a href="./index.html#landing" class="header__logo" title="cards-logo">
+    <img
+      src="./assets/images/descarga.svg"
+      alt="cards-logo"
+      class="header__logo__image"
+    />
+  </a>
+
+        </header>
+        <main class="main">
+            <section class="result"> <a class="button--delete"><i class="far fa-trash-alt trash__icon"></i>Reset</a>
+
+                <div
+                class="card js-card">
+                    <div class="card__border-left card__border-left">
+                         <h1 class="card__title js-cardTitle">Nombre Apellido</h1>
+
+                         <h2 class="card__job js-cardJob">Front-end developer</h2>
+
+                    </div>
+                    <img class="card__image" src="http://via.placeholder.com/240x200" alt="Imagen del cliente"
+                    />
+                    <ul class="card__list">
+                        <li class="card__item"> <a class="card__link js-cardPhone" href="" title="Número teléfono" target="_blank"><i
+            class="fas fa-mobile-alt"></i></a>
+
+                            <li class="card__item"> <a class="card__link js-cardEmail" href="" title="Mandar un correo" target="_blank"><i
+            class="far fa-envelope"></i></a>
+
+                            </li>
+                            <li class="card__item"> <a class="card__link js-cardLinkedin" href="" title="Visitar LinkedIn"
+                                target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+
+                            </li>
+                            <li class="card__item "> <a class="card__link js-cardGithub" href="" title="Ir a GitHub" target="_blank"><i
+            class="fab fa-github-alt"></i></a>
+
+                    </ul>
+                    </div>
+            </section>
+            <div class="container">
+                <section class="design colors">
+                    <div class="collapse js-colors-collapse">
+                        <div class="collapse__items"> <i class="far fa-object-ungroup collapse__items-icon"></i>
+
+                             <h1 class="collapse__items-title">Diseña</h1>
+
+                        </div> <i class="fas fa-angle-down collapse__icon-down"></i>
+
+                    </div>
+                    <div class="box-color">
+                        <div class="colour">
+                             <h2 class="colour__title">Colores</h2>
+
+                            <div class="colour__palettes">
+                                <div>
+                                    <label class="option1" for="color-option1">
+                                        <input class="option1_items" type="radio" id="color-option1" value="color-option1"
+                                        name="color-options" checked />
+                                        <div class="palette1">
+                                            <div class="palette1__item1"></div>
+                                            <div class="palette1__item2"></div>
+                                            <div class="palette1__item3"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="option2" for="color-option2">
+                                        <input class="option2_items" type="radio" id="color-option2" value="color-option2"
+                                        name="color-options" />
+                                        <div class="palette2">
+                                            <div class="palette2__item1"></div>
+                                            <div class="palette2__item2"></div>
+                                            <div class="palette2__item3"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="option3" for="color-option3">
+                                        <input class="option3_items" type="radio" id="color-option3" value="color-option3"
+                                        name="color-options" />
+                                        <div class="palette3">
+                                            <div class="palette3__item1"></div>
+                                            <div class="palette3__item2"></div>
+                                            <div class="palette3__item3"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="design form">
+                    <div class="collapse js-form-collapse">
+                        <div class="collapse__items"> <i class="far fa-keyboard collapse__items-icon"></i>
+
+                             <h1 class="collapse__items-title">Rellena</h1>
+
+                        </div> <i class="fas fa-angle-down collapse__icon-down"></i>
+
+                    </div>
+                    <div class="box-form js-hidden">
+                        <form action="#" method="POST" class="container-form ">
+                            <label for="fullName" class="form__label">Nombre completo</label>
+                            <input type="text" id="fullName" name="fullName"
+                            placeholder="Ej:sally-hill@gmail.com" class="form__input js-name" />
+                            <label for="job" class="form__label">Puesto</label>
+                            <input type="text" id="job" name="job" placeholder="Ej: Front-end unicorn"
+                            class="form__input js-job" />
+                            <label for="image" class="form__label">Imagen de perfil</label>
+                            <div class="form__image">
+                                <div class="form__image--btn">
+                                    <p class="form__image--p">Añadir imagen</p>
+                                </div>
+                                <div class="form__image--min"></div>
+                            </div>
+                            <label for="email" class="form__label">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Ej: sally-hill@gmail.com"
+                            class="form__input js-email" />
+                            <label for="phone" class="form__label">Teléfono</label>
+                            <input type="text" id="phone" name="phone" placeholder="Ej:555-55-55-55"
+                            class="form__input js-phone" />
+                            <label for="linkedin" class="form__label">Linkedin</label>
+                            <input type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill"
+                            class="form__input js-linkedin" />
+                            <label for="github" class="form__label">Github</label>
+                            <input type="text" id="github" name="github" placeholder="Ej: @sally-hill"
+                            class="form__input js-github" />
+                        </form>
+                    </div>
+                </section>
+                <section class="design create">
+                    <div class="collapse js-share-collapse">
+                        <div class="collapse__items"> <i class="fas fa-share-alt collapse__items-icon"></i>
+
+                             <h1 class="collapse__items-title">Comparte</h1>
+
+                        </div> <i class="fas fa-angle-down collapse__icon-down"></i>
+
+                    </div>
+                    <div class="box-share js-hidden">
+                        <div class="share"> <a class="share__button share__button--default" href="#" title="Crea tu tarjeta"><i
+          class="far fa-address-card"></i>Crear tarjeta </a>
+
+                            <div class="share__result">
+                                <p class="share__result__text">La tarjeta ha sido creada:</p>
+                                <p class="share__result__url">https://awesome-profile-card.com?id=A456DF0001</p> <a class="share__result__button"
+                                href="#" title="Comparte en twitter"> <i class="fab fa-twitter"></i>Compartir
+          en twitter</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
+        </main>
+        <footer class="footer"> <small class="footer__small">Awesome profile-cards @2018 </small>
+
+            <img
+            src="./assets/images/logo-adalab.png" alt="Adalab-logo" class="footer__logo"
+            />
+        </footer>
+        <script src="./assets/js/main.js"></script>
+    </body>
 
 </html>

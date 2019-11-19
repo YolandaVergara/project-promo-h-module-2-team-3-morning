@@ -15,10 +15,8 @@ function collapsableOption1() {
   } else {
     boxColor.classList.add('js-hidden');
   };
-
   boxForm.classList.add('js-hidden');
   boxShare.classList.add('js-hidden');
-
 };
 
 function collapsableOption2() {
@@ -27,7 +25,6 @@ function collapsableOption2() {
   } else {
     boxForm.classList.add('js-hidden');
   };
-
   boxColor.classList.add('js-hidden');
   boxShare.classList.add('js-hidden');
 };
@@ -38,20 +35,10 @@ function collapsableOption3() {
   } else {
     boxShare.classList.add('js-hidden');
   };
-
   boxColor.classList.add('js-hidden');
   boxForm.classList.add('js-hidden');
 };
 
-
-
 colorsCollapsable.addEventListener('click', collapsableOption1);
-
-
-
-
-
-
-
 formCollapsable.addEventListener('click', collapsableOption2);
 shareCollapsable.addEventListener('click', collapsableOption3);
