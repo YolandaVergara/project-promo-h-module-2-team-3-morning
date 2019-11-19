@@ -5,14 +5,17 @@ const cardNameEle = document.querySelector(".js-cardTitle");
 const jobEle = document.querySelector(".js-job");
 const cardJobEle = document.querySelector(".js-cardJob");
 const emailEle = document.querySelector(".js-email");
-const cardEmailEle = document.querySelector(".js-cardEmail");
+let cardEmailEle = document.querySelector(".js-cardEmail");
 const phoneEle = document.querySelector(".js-phone");
 let cardPhoneEle = document.querySelector(".js-cardPhone");
 const linkedinEle = document.querySelector(".js-linkedin");
-const cardLinkedinEle = document.querySelector(".js-cardLinkedin");
+let cardLinkedinEle = document.querySelector(".js-cardLinkedin");
 const githubEle = document.querySelector(".js-github");
-const cardGithubEle = document.querySelector(".js-cardGithub");
-const liEle = document.querySelector(".card__item");
+let cardGithubEle = document.querySelector(".js-cardGithub");
+const liElePhone = document.querySelector(".itemPhone");
+const liEleMail = document.querySelector(".itemEmail");
+const liEleLinkedin = document.querySelector(".itemLinkedin");
+const liEleGithub = document.querySelector(".itemGithub");
 const empty = "";
 function changeCard() {
   const nameValue = nameEle.value;
@@ -32,25 +35,36 @@ function changeCard() {
 
   let phoneValue = phoneEle.value;
   if (phoneValue !== empty) {
-    liEle.classList.remove("js-opacity");
+    liElePhone.classList.remove("js-opacity");
     cardPhoneEle = phoneValue;
   } else {
-    liEle.classList.add("js-opacity");
+    liElePhone.classList.add("js-opacity");
   }
 
-  //   let emailValue = emailEle.value; {
+  let emailValue = emailEle.value;
 
-  //   if (emailValue !== empty) {
+  if (emailValue !== empty) {
+    liEleMail.classList.remove("js-opacity");
+    cardEmailEle.href = `mailto: ${emailValue}`;
+  } else {
+    liEleMail.classList.add("js-opacity");
+  }
 
-  //   cardEmailEle.href = `mailto: ${emailValue}`;
-  // }   else {
-  //   }
+  let linkedinValue = linkedinEle.value;
+  if (linkedinValue !== empty) {
+    liEleLinkedin.classList.remove("js-opacity");
+    cardLinkedinEle.href = linkedinValue;
+  } else {
+    liEleLinkedin.classList.add("js-opacity");
+  }
 
-  //   let linkedinValue = linkedinEle.value;
-  //   cardLinkedinEle.href = linkedinValue;
-
-  //   let githubValue = githubEle.value;
-  //   cardGithubEle.href = githubValue;*/
+  let githubValue = githubEle.value;
+  if (githubValue !== empty) {
+    liEleGithub.classList.remove("js-opacity");
+    cardGithubEle.href = githubValue;
+  } else {
+    liEleGithub.classList.add("js-opacity");
+  }
 }
 
 nameEle.addEventListener("keyup", changeCard);
