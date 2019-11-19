@@ -159,3 +159,64 @@
     height: 2.5rem;
   }
 }
+
+/*Change color*/
+
+.js-card-palette1 {
+
+  .card__title {
+    color: #114e4e;
+  }
+
+  .card__link {
+    color: #114e4e;
+  }
+
+  .card__border-left {
+    border-left: 0.5rem solid #438792;
+  }
+
+  .card__item {
+    border: solid 0.2rem #a2deaf;
+  }
+}
+
+.js-card-palette2 {
+
+  .card__title {
+    color: #420101;
+  }
+
+  .card__link {
+    color: #420101;
+  }
+
+  .card__border-left {
+    border-left: 0.5rem solid #bd1010;
+  }
+
+  .card__item {
+    border: solid 0.2rem #e95626;
+  }
+}
+
+
+
+.js-card-palette3 {
+
+  .card__title {
+    color: #3e5b65;
+  }
+
+  .card__link {
+    color: #3e5b65;
+  }
+
+  .card__border-left {
+    border-left: 0.5rem solid #eab052;
+  }
+
+  .card__item {
+    border: solid 0.2rem #a0c0cf;
+  }
+}
