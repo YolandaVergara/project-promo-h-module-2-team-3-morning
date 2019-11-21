@@ -6,6 +6,7 @@
 
 .form {
   border-bottom: solid 1px $sixthcolor;
+
   &__label {
     font-family: $fonttertiary;
     color: $secondcolor;
@@ -26,6 +27,15 @@
     justify-content: center;
   }
 
+  &__file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
   &__image {
     width: 100%;
     display: flex;
@@ -39,9 +49,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    &--p {
       color: white;
       font-size: 1.4rem;
       font-family: $fonttertiary;
