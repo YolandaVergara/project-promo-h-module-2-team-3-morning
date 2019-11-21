@@ -2,6 +2,7 @@
 
 .design {
   margin: 3rem 3rem;
+  
 }
 
 /*Title section design*/
@@ -48,7 +49,7 @@
 
   &__title {
     font-size: 1.4rem;
-    color: #54585a;
+    color: $fourthcolor;
     font-family: $fonttertiary;
     font-weight: normal;
     text-transform: uppercase;
@@ -83,7 +84,7 @@
   }
 
   &__item2 {
-    background: #438792;
+    background: $seventhcolor;
     width: 3rem;
     height: 2.5rem;
   }
@@ -128,7 +129,7 @@
   }
 }
 
-/*Palette - option3*/
+/*Palette -option3*/
 
 .option3 {
   display: flex;
@@ -163,62 +164,57 @@
 /*Change color*/
 
 .js-card-palette1 {
-
   .card__title {
-    color: #114e4e;
+    color: $color1Palette1;
   }
 
   .card__link {
-    color: #114e4e;
+    color: $color1Palette1;
   }
 
   .card__border-left {
-    border-left: 0.5rem solid #438792;
+    border-left: 0.5rem solid $color2Palette1;
   }
 
   .card__item {
-    border: solid 0.2rem #a2deaf;
+    border: solid 0.2rem $color3Palette1;
   }
 
   cursor: pointer;
 }
 
 .js-card-palette2 {
-
   .card__title {
-    color: #420101;
+    color: $color1Palette2;
   }
 
   .card__link {
-    color: #420101;
+    color: $color1Palette2;
   }
 
   .card__border-left {
-    border-left: 0.5rem solid #bd1010;
+    border-left: 0.5rem solid $color2Palette2;
   }
 
   .card__item {
-    border: solid 0.2rem #e95626;
+    border: solid 0.2rem $color3Palette2;
   }
 }
 
-
-
 .js-card-palette3 {
-
   .card__title {
-    color: #3e5b65;
+    color: $color1Palette3;
   }
 
   .card__link {
-    color: #3e5b65;
+    color: $color1Palette3;
   }
 
   .card__border-left {
-    border-left: 0.5rem solid #eab052;
+    border-left: 0.5rem solid $color2Palette3;
   }
 
   .card__item {
-    border: solid 0.2rem #a0c0cf;
+    border: solid 0.2rem $color3Palette3;
   }
 }
