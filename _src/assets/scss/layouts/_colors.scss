@@ -2,7 +2,7 @@
 
 .design {
   margin: 3rem 3rem;
-  
+
 }
 
 /*Title section design*/
@@ -12,6 +12,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   &__items {
     display: flex;
