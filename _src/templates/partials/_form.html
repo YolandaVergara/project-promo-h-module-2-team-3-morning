@@ -31,9 +31,17 @@
     <label for="image" class="form__label">Imagen de perfil</label>
 
     <div class="form__image">
-      <div class="form__image--btn">
-        <p class="form__image--p">Añadir imagen</p>
-      </div>
+      <label for="file" class="form__image--p">Añadir imagen</label>
+
+      <input
+        type="file"
+        value="Añadir imagen"
+        class="form__image--btn"
+        accept="image/*"
+        name="file"
+        id="file"
+      />
+
       <div class="form__image--min"></div>
     </div>
 
