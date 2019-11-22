@@ -1,5 +1,5 @@
 <section class="design form">
-  <div class="collapse">
+  <div class="collapse js-form-collapse">
     <div class="collapse__items">
       <i class="far fa-keyboard collapse__items-icon"></i>
 
@@ -8,69 +8,70 @@
 
     <i class="fas fa-angle-down collapse__icon-down"></i>
   </div>
+  <div class="box-form js-hidden">
+    <form action="#" method="POST" class="container-form ">
+      <label for="fullName" class="form__label">Nombre completo</label>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Ej:sally-hill@gmail.com"
+        class="form__input js-name"
+      />
 
-  <form id="js-form" action="#" method="POST" class="container-form">
-    <label for="fullName" class="form__label">Nombre completo</label>
-    <input
-      type="text"
-      id="fullName"
-      name="fullName"
-      placeholder="Ej:sally-hill@gmail.com"
-      class="form__input js-name"
-    />
+      <label for="job" class="form__label">Puesto</label>
+      <input
+        type="text"
+        id="job"
+        name="job"
+        placeholder="Ej: Front-end unicorn"
+        class="form__input js-job"
+      />
 
-    <label for="job" class="form__label">Puesto</label>
-    <input
-      type="text"
-      id="job"
-      name="job"
-      placeholder="Ej: Front-end unicorn"
-      class="form__input js-job"
-    />
+      <label for="image" class="form__label">Imagen de perfil</label>
 
-    <label for="image" class="form__label">Imagen de perfil</label>
-
-    <div class="form__image">
-      <div class="form__image--btn">
-        <p class="form__image--p">Añadir imagen</p>
+      <div class="form__image">
+        <div class="form__image--btn">
+          <p class="form__image--p">Añadir imagen</p>
+        </div>
+        <div class="form__image--min"></div>
       </div>
-      <div class="form__image--min"></div>
-    </div>
 
-    <label for="email" class="form__label">Email</label>
-    <input
-      type="text"
-      id="email"
-      name="email"
-      placeholder="Ej: sally-hill@gmail.com"
-      class="form__input js-email"
-    />
+      <label for="email" class="form__label">Email</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="Ej: sally-hill@gmail.com"
+        class="form__input js-email"
+      />
 
-    <label for="phone" class="form__label">Teléfono</label>
-    <input
-      type="text"
-      id="phone"
-      name="phone"
-      placeholder="Ej:555-55-55-55"
-      class="form__input js-phone"
-    />
+      <label for="phone" class="form__label">Teléfono</label>
+      <input
+        type="text"
+        id="phone"
+        name="phone"
+        placeholder="Ej:555-55-55-55"
+        class="form__input js-phone"
+      />
 
-    <label for="linkedin" class="form__label">Linkedin</label>
-    <input
-      type="text"
-      id="linkedin"
-      name="linkedin"
-      placeholder="Ej: linkedin.com/in/sally.hill"
-      class="form__input js-linkedin"
-    />
+      <label for="linkedin" class="form__label">Linkedin</label>
+      <input
+        type="text"
+        id="linkedin"
+        name="linkedin"
+        placeholder="Ej: linkedin.com/in/sally.hill"
+        class="form__input js-linkedin"
+      />
 
-    <label for="github" class="form__label">Github</label>
-    <input
-      type="text"
-      id="github"
-      name="github"
-      placeholder="Ej: @sally-hill"
-      class="form__input js-github"
-    />
-  </form>
+      <label for="github" class="form__label">Github</label>
+      <input
+        type="text"
+        id="github"
+        name="github"
+        placeholder="Ej: @sally-hill"
+        class="form__input js-github"
+      />
+    </form>
+  </div>
 </section>

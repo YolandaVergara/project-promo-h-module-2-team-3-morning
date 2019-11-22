@@ -5,6 +5,7 @@
 }
 
 .form {
+  border-bottom: solid 1px $sixthcolor;
   &__label {
     font-family: $fonttertiary;
     color: $secondcolor;
