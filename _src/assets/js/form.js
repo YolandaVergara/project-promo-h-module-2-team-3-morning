@@ -21,7 +21,7 @@ const empty = "";
 const cardFieldsDefaultValues = {
   name: "Nombre Apellido",
   job: "Front-end developer",
-  // picture: "",
+  image: "http://via.placeholder.com/240x200",
   phone: "tel:",
   email: "mailto:",
   linkedin: "",
@@ -29,7 +29,7 @@ const cardFieldsDefaultValues = {
 };
 
 function changeCard() {
-  const nameValue = nameEle.value;
+  let nameValue = nameEle.value;
   if (nameValue !== empty) {
     cardNameEle.innerHTML = nameValue;
   } else {
@@ -37,12 +37,14 @@ function changeCard() {
   }
 
   let jobValue = jobEle.value;
-
   if (jobValue !== empty) {
     cardJobEle.innerHTML = jobValue;
   } else {
-    cardJobEle.innerHTML = "Front-end developer";
+    cardJobEle.innerHTML = cardFieldsDefaultValues.job;
   }
+
+  const image = document.querySelector('.js-card__image')
+  image.src = cardFieldsDefaultValues.image;
 
   let phoneValue = phoneEle.value;
   if (phoneValue !== empty) {
