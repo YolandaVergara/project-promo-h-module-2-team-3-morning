@@ -13,6 +13,10 @@
   justify-content: space-between;
   align-items: center;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &__items {
     display: flex;
     flex-direction: row;
@@ -22,6 +26,7 @@
       font-size: 1.8rem;
       color: $firstcolor;
     }
+    
 
     &-title {
       padding-left: 1rem;
