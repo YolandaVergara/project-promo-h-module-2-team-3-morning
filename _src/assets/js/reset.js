@@ -1,4 +1,5 @@
 "use strict";
+
 const btnDelete = document.querySelector(".js-button--delete");
 const handleReset = function() {
   console.log("escuchar click");
@@ -18,16 +19,24 @@ const cardFieldsObject = {
   name: "Nombre Apellido",
   job: "Front-end developer",
   // picture: "",
-  phone: "",
-  email: ""
+  phone: "tel:",
+  email: "mailto:",
+  linkedin: "",
+  github: ""
 };
 
 function paintCardAfterReset() {
   cardNameEle.innerHTML = cardFieldsObject.name;
   cardJobEle.innerHTML = cardFieldsObject.job;
-  // cardEmailEle.innerHTML.href = cardFieldsObject.email;
+  //cardPhoneEle.href = cardFieldsObject.phone;
+  cardEmailEle.href = cardFieldsObject.email;
+  cardLinkedinEle.href = cardFieldsObject.linkedin;
+  cardGithubEle.href = cardFieldsObject.github;
 
-  console.log(cardEmailEle);
+  const liCardElements = document.querySelectorAll(".js-card__item");
+  for (const element of liCardElements) {
+    element.classList.add("opacity");
+  }
 }
 
 //funcion restaurar valores de la tarjeta

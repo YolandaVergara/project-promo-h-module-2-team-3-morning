@@ -33,37 +33,37 @@ function changeCard() {
     cardJobEle.innerHTML = "Front-end developer";
   }
 
-  let phoneValue = phoneEle.value;
+  let phoneValue = parseInt(phoneEle.value);
   if (phoneValue !== empty) {
-    liElePhone.classList.remove("js-opacity");
-    cardPhoneEle = phoneValue;
+    liElePhone.classList.remove("opacity");
+    cardPhoneEle = "tel:" + phoneValue;
   } else {
-    liElePhone.classList.add("js-opacity");
+    liElePhone.classList.add("opacity");
   }
 
   let emailValue = emailEle.value;
 
   if (emailValue !== empty) {
-    liEleMail.classList.remove("js-opacity");
+    liEleMail.classList.remove("opacity");
     cardEmailEle.href = `mailto: ${emailValue}`;
   } else {
-    liEleMail.classList.add("js-opacity");
+    liEleMail.classList.add("opacity");
   }
 
   let linkedinValue = linkedinEle.value;
   if (linkedinValue !== empty) {
-    liEleLinkedin.classList.remove("js-opacity");
+    liEleLinkedin.classList.remove("opacity");
     cardLinkedinEle.href = linkedinValue;
   } else {
-    liEleLinkedin.classList.add("js-opacity");
+    liEleLinkedin.classList.add("opacity");
   }
 
   let githubValue = githubEle.value;
   if (githubValue !== empty) {
-    liEleGithub.classList.remove("js-opacity");
+    liEleGithub.classList.remove("opacity");
     cardGithubEle.href = githubValue;
   } else {
-    liEleGithub.classList.add("js-opacity");
+    liEleGithub.classList.add("opacity");
   }
 }
 
