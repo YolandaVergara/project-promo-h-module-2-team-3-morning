@@ -17,12 +17,23 @@ const liEleMail = document.querySelector(".itemEmail");
 const liEleLinkedin = document.querySelector(".itemLinkedin");
 const liEleGithub = document.querySelector(".itemGithub");
 const empty = "";
+
+const cardFieldsDefaultValues = {
+  name: "Nombre Apellido",
+  job: "Front-end developer",
+  // picture: "",
+  phone: "tel:",
+  email: "mailto:",
+  linkedin: "",
+  github: ""
+};
+
 function changeCard() {
   const nameValue = nameEle.value;
   if (nameValue !== empty) {
     cardNameEle.innerHTML = nameValue;
   } else {
-    cardNameEle.innerHTML = "Nombre Apellido";
+    cardNameEle.innerHTML = cardFieldsDefaultValues.name;
   }
 
   let jobValue = jobEle.value;
@@ -33,7 +44,7 @@ function changeCard() {
     cardJobEle.innerHTML = "Front-end developer";
   }
 
-  let phoneValue = parseInt(phoneEle.value);
+  let phoneValue = phoneEle.value;
   if (phoneValue !== empty) {
     liElePhone.classList.remove("opacity");
     cardPhoneEle = "tel:" + phoneValue;
