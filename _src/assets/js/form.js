@@ -18,7 +18,7 @@ const liEleLinkedin = document.querySelector(".itemLinkedin");
 const liEleGithub = document.querySelector(".itemGithub");
 const empty = "";
 const cardImage = document.querySelector(".card__image");
-const imgPreview = document.querySelector(".form__image");
+const imgPreview = document.querySelector(".js__profile-preview");
 
 const cardFieldsDefaultValues = {
   name: "Nombre Apellido",
@@ -47,7 +47,7 @@ function changeCard() {
   let phoneValue = phoneEle.value;
   if (phoneValue !== empty) {
     liElePhone.classList.remove("opacity");
-    cardPhoneEle = "tel:" + phoneValue;
+    cardPhoneEle.href = `tel:${phoneValue}`;
   } else {
     liElePhone.classList.add("opacity");
   }
@@ -56,7 +56,7 @@ function changeCard() {
 
   if (emailValue !== empty) {
     liEleMail.classList.remove("opacity");
-    cardEmailEle.href = `mailto: ${emailValue}`;
+    cardEmailEle.href = `mailto:${emailValue}`;
   } else {
     liEleMail.classList.add("opacity");
   }
