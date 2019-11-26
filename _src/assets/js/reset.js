@@ -11,8 +11,10 @@ const deleteData = function() {
   document.querySelector(".js-email").value = "";
   document.querySelector(".js-linkedin").value = "";
   document.querySelector(".js-github").value = "";
-  //document.querySelector(".js__profile-image").src =
-  //  "../images/placeholderImg.jpg";
+  //
+  cardImage.style.backgroundImage = "url(../assets/images/placeholderImg.jpg)";
+  imgPreview.style.backgroundImage = "url('')";
+
   changeCard();
   console.log("borrar datos");
 };

@@ -23,7 +23,6 @@ const imgPreview = document.querySelector(".form__image");
 const cardFieldsDefaultValues = {
   name: "Nombre Apellido",
   job: "Front-end developer",
-  image: "../images/placeholderImg.jpg",
   phone: "tel:",
   email: "mailto:",
   linkedin: "",
@@ -77,9 +76,6 @@ function changeCard() {
   } else {
     liEleGithub.classList.add("opacity");
   }
-
-  cardImage.style.backgroundImage = `url(${cardFieldsDefaultValues.image})`;
-  imgPreview.style.backgroundImage = `url(${cardFieldsDefaultValues.image})`;
 }
 
 nameEle.addEventListener("keyup", changeCard);
