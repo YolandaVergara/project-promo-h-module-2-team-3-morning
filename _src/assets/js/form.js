@@ -43,9 +43,6 @@ function changeCard() {
     cardJobEle.innerHTML = cardFieldsDefaultValues.job;
   }
 
-  const image = document.querySelector('.js-card__image')
-  image.src = cardFieldsDefaultValues.image;
-
   let phoneValue = phoneEle.value;
   if (phoneValue !== empty) {
     liElePhone.classList.remove("opacity");

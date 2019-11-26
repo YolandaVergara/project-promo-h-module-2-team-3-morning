@@ -1,8 +1,6 @@
 .result {
-  background-image: linear-gradient(
-    $colorBackgroundPrimary,
-    $colorBackgroundSecondary
-  );
+  background-image: linear-gradient($colorBackgroundPrimary,
+      $colorBackgroundSecondary);
   padding: 0 3.5rem 4rem 4.5rem;
   display: flex;
   flex-direction: column;
@@ -28,6 +26,7 @@
   text-decoration: none;
   color: $fourthcolor;
   display: block;
+
   @media all and (min-width: 768px) {
     margin-top: 17.3rem;
   }
@@ -88,8 +87,17 @@
   &__link {
     color: $secondcolor;
   }
+
   &__icon {
     font-size: 1.8rem;
+  }
+
+  &__image {
+    width: 24rem;
+    height: 20rem;
+    background-image: url('http://via.placeholder.com/240x200');
+    background-position: center;
+    background-size: cover;
   }
 }
 
