@@ -17,11 +17,13 @@ const liEleMail = document.querySelector(".itemEmail");
 const liEleLinkedin = document.querySelector(".itemLinkedin");
 const liEleGithub = document.querySelector(".itemGithub");
 const empty = "";
+const cardImage = document.querySelector(".card__image");
+const imgPreview = document.querySelector(".form__image");
 
 const cardFieldsDefaultValues = {
   name: "Nombre Apellido",
   job: "Front-end developer",
-  image: "http://via.placeholder.com/240x200",
+  image: "../images/placeholderImg.jpg",
   phone: "tel:",
   email: "mailto:",
   linkedin: "",
@@ -75,6 +77,9 @@ function changeCard() {
   } else {
     liEleGithub.classList.add("opacity");
   }
+
+  cardImage.style.backgroundImage = `url(${cardFieldsDefaultValues.image})`;
+  imgPreview.style.backgroundImage = `url(${cardFieldsDefaultValues.image})`;
 }
 
 nameEle.addEventListener("keyup", changeCard);

@@ -1,6 +1,8 @@
 .result {
-  background-image: linear-gradient($colorBackgroundPrimary,
-      $colorBackgroundSecondary);
+  background-image: linear-gradient(
+    $colorBackgroundPrimary,
+    $colorBackgroundSecondary
+  );
   padding: 0 3.5rem 4rem 4.5rem;
   display: flex;
   flex-direction: column;
@@ -95,7 +97,7 @@
   &__image {
     width: 24rem;
     height: 20rem;
-    background-image: url('http://via.placeholder.com/240x200');
+    background-image: url("../images/placeholderImg.jpg");
     background-position: center;
     background-size: cover;
   }

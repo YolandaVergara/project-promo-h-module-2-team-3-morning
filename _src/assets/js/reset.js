@@ -2,16 +2,17 @@
 
 const btnDelete = document.querySelector(".js-button--delete");
 
-
 //funcion para borra los datos del form
 const deleteData = function() {
   changeColorPalette1();
   document.querySelector(".js-name").value = "";
   document.querySelector(".js-job").value = "";
-  document.querySelector(".js-phone").value = '';
+  document.querySelector(".js-phone").value = "";
   document.querySelector(".js-email").value = "";
   document.querySelector(".js-linkedin").value = "";
   document.querySelector(".js-github").value = "";
+  //document.querySelector(".js__profile-image").src =
+  //  "../images/placeholderImg.jpg";
   changeCard();
   console.log("borrar datos");
 };
