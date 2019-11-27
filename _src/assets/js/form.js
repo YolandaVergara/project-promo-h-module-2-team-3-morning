@@ -87,7 +87,7 @@ phoneEle.addEventListener("keyup", changeCard);
 linkedinEle.addEventListener("keyup", changeCard);
 githubEle.addEventListener("keyup", changeCard);
 
-//
+//Validamos el formulario y añadimos la clase "active" cuando el formulario está cumplimentado
 const validation = function(event) {
   event.preventDefault();
   const containerForm = document.querySelector(".js-containerForm");
@@ -98,3 +98,6 @@ const validation = function(event) {
   }
 };
 submitEl.addEventListener("click", validation);
+
+//API
+fetch;
