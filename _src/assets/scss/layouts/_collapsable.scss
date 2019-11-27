@@ -1,3 +1,12 @@
-.js-hidden {
+.js-container {
+  
   display: none;
+}
+
+.content-collapsible .js-container {
+  display: block;
+}
+
+.content-collapsible .collapse__icon-down {
+  transform: translateY(-50%) rotate(-180deg);
 }
