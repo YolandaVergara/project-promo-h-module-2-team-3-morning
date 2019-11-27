@@ -11,7 +11,7 @@
   </div>
 
   <div class="js-container">
-    <form action="#" method="POST" class="container-form js-containerForm">
+    <form class="container-form js-containerForm">
       <label for="fullName" class="form__label">Nombre completo</label>
       <input type="text" id="fullName" name="fullName" placeholder="Ej:sally-hill@gmail.com" class="form__input js-name"
         required />
@@ -56,11 +56,10 @@
 
   <div class="js-container">
     <div class="share">
-      <button class="share__button share__button--default js-button" type="submit"><i
-          class="far fa-address-card"></i>Crear
+      <button class="share__button  js-button" type="submit"><i class="far fa-address-card"></i>Crear
         tarjeta</button>
 
-      <div class="share__result">
+      <div class="share__result share__result--hidden js-shareResult">
         <p class="share__result__text">La tarjeta ha sido creada:</p>
         <p class="share__result__url">
           https://awesome-profile-card.com?id=A456DF0001
