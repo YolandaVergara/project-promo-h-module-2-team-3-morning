@@ -77,6 +77,7 @@ function changeCard() {
   } else {
     liEleGithub.classList.add("opacity");
   }
+  setToLocalStorage();
 }
 
 nameEle.addEventListener("keyup", changeCard);
