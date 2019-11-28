@@ -4,7 +4,7 @@ const btnDelete = document.querySelector(".js-button--delete");
 
 //funcion para borra los datos del form
 const deleteData = function() {
-  changeColorPalette1();
+  changeColorPalette();
   const palette1 = document.getElementById("color-option1");
   palette1.checked = true;
   document.querySelector(".js-name").value = "";
