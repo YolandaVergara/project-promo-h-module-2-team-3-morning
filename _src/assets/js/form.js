@@ -19,6 +19,7 @@ const liEleGithub = document.querySelector(".itemGithub");
 const empty = "";
 const cardImage = document.querySelector(".card__image");
 const imgPreview = document.querySelector(".js__profile-preview");
+const submitEl = document.querySelector(".js-button");
 
 const cardFieldsDefaultValues = {
   name: "Nombre Apellido",
@@ -85,3 +86,5 @@ emailEle.addEventListener("keyup", changeCard);
 phoneEle.addEventListener("keyup", changeCard);
 linkedinEle.addEventListener("keyup", changeCard);
 githubEle.addEventListener("keyup", changeCard);
+
+//
