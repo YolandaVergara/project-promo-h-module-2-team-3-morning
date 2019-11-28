@@ -25,6 +25,7 @@ let picture = '';
 function setImage() {
   picture = fr.result;
   previewImage();
+  setToLocalStorage();
 }
 
 function previewImage() {
