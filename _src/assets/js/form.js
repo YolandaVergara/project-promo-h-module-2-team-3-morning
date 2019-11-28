@@ -105,3 +105,17 @@ Tenéis que crear un objeto con todos los campos que dice en la documentación
 
 Y luego hacer un fetch con verbo post, pasando ese objeto
 Y luego esperar la respuesta*/
+const dataObject = {
+  name: nameEle.value,
+  job: jobEle.value,
+  phone: phoneEle.value,
+  email: emailEle.value,
+  linkedin: linkedinEle.value,
+  github: githubEle.value,
+  //metemos el valor del elemento radio seleccionado (color-option1, color-option2...) y se guarda en el objeto
+  colour: colourChecked.value,
+  photo: picture
+};
+
+fetch(https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/
+  );
