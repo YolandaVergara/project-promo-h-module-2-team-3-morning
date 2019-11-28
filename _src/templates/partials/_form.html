@@ -11,9 +11,9 @@
   </div>
 
   <div class="js-container">
-    <form class="container-form js-containerForm">
+    <form class="container-form js-containerForm" method="POST">
       <label for="fullName" class="form__label">Nombre completo</label>
-      <input type="text" id="fullName" name="fullName" placeholder="Ej:sally-hill@gmail.com" class="form__input js-name"
+      <input type="text" id="name" name="name" placeholder="Ej:sally-hill@gmail.com" class="form__input js-name"
         required />
 
       <label for="job" class="form__label">Puesto</label>
@@ -21,7 +21,7 @@
 
       <label for="image" class="form__label">Imagen de perfil</label>
       <div class="form__image">
-        <input type="file" class="form__file js__profile-upload-btn" name="file" id="file" required>
+        <input type="file" class="form__file js__profile-upload-btn" name="file" id="img-selector">
         <button for="file" class="form__image--btn js__profile-trigger">Añadir imagen</button>
         <div class="form__image--min js__profile-preview"></div>
       </div>
@@ -31,7 +31,7 @@
         required />
 
       <label for="phone" class="form__label">Teléfono</label>
-      <input type="text" id="phone" name="phone" placeholder="Ej:555-55-55-55" class="form__input js-phone" required />
+      <input type="text" id="phone" name="phone" placeholder="Ej:555-55-55-55" class="form__input js-phone" />
 
       <label for="linkedin" class="form__label">Linkedin</label>
       <input type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill"
