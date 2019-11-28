@@ -99,5 +99,8 @@ const validation = function(event) {
 };
 submitEl.addEventListener("click", validation);
 
-//API
-fetch;
+/*API
+Tenéis que crear un objeto con todos los campos que dice en la documentación
+
+Y luego hacer un fetch con verbo post, pasando ese objeto
+Y luego esperar la respuesta*/
