@@ -4,7 +4,8 @@ const btnDelete = document.querySelector(".js-button--delete");
 
 //funcion para borra los datos del form
 const deleteData = function() {
-  changeColorPalette();
+  // changeColorPalette();
+  colorReset();
   const palette1 = document.getElementById("color-option1");
   palette1.checked = true;
   document.querySelector(".js-name").value = "";
@@ -19,6 +20,11 @@ const deleteData = function() {
   changeCard();
 };
 
+function colorReset() {
+  card.classList.remove("js-card-palette2");
+  card.classList.remove("js-card-palette3");
+  card.classList.add("js-card-palette1");
+}
 //Funcion que se ejecuta al pulsar reset
 const handleReset = function() {
   //Limpio los inputs
