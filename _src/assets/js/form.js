@@ -20,6 +20,7 @@ const empty = "";
 const cardImage = document.querySelector(".card__image");
 const imgPreview = document.querySelector(".js__profile-preview");
 const submitEl = document.querySelector(".js-button");
+const shareEle = document.querySelector(".js-shareResult");
 
 const cardFieldsDefaultValues = {
   name: "Nombre Apellido",
@@ -87,4 +88,25 @@ phoneEle.addEventListener("keyup", changeCard);
 linkedinEle.addEventListener("keyup", changeCard);
 githubEle.addEventListener("keyup", changeCard);
 
-//
+//Validamos el formulario y añadimos la clase "active" cuando el formulario está cumplimentado
+const validation = function (event) {
+  event.preventDefault();
+  const containerForm = document.querySelector(".js-containerForm");
+  const check = containerForm.checkValidity();
+  if (check === true) {
+    submitEl.classList.toggle("share__button--active");
+    shareEle.classList.toggle("share__result--hidden");
+  }
+};
+submitEl.addEventListener("click", validation);
+
+/*API
+Tenéis que crear un objeto con todos los campos que dice en la documentación
+
+Y luego hacer un fetch con verbo post, pasando ese objeto
+Y luego esperar la respuesta*/
+
+
+
+
+

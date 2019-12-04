@@ -11,9 +11,9 @@
   </div>
 
   <div class="js-container">
-    <form action="#" method="POST" class="container-form js-containerForm">
+    <form class="container-form js-containerForm" method="POST">
       <label for="fullName" class="form__label">Nombre completo</label>
-      <input type="text" id="fullName" name="fullName" placeholder="Ej:sally-hill@gmail.com" class="form__input js-name"
+      <input type="text" id="name" name="name" placeholder="Ej:sally-hill@gmail.com" class="form__input js-name"
         required />
 
       <label for="job" class="form__label">Puesto</label>
@@ -21,7 +21,7 @@
 
       <label for="image" class="form__label">Imagen de perfil</label>
       <div class="form__image">
-        <input type="file" class="form__file js__profile-upload-btn" name="file" id="file" required>
+        <input type="file" class="form__file js__profile-upload-btn" name="file" id="img-selector">
         <button for="file" class="form__image--btn js__profile-trigger">Añadir imagen</button>
         <div class="form__image--min js__profile-preview"></div>
       </div>
@@ -31,7 +31,7 @@
         required />
 
       <label for="phone" class="form__label">Teléfono</label>
-      <input type="text" id="phone" name="phone" placeholder="Ej:555-55-55-55" class="form__input js-phone" required />
+      <input type="text" id="phone" name="phone" placeholder="Ej:555-55-55-55" class="form__input js-phone" />
 
       <label for="linkedin" class="form__label">Linkedin</label>
       <input type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/sally.hill"
@@ -56,17 +56,18 @@
 
   <div class="js-container">
     <div class="share">
-      <button class="share__button share__button--default js-button" type="submit"><i
-          class="far fa-address-card"></i>Crear
+      <button class="share__button  js-button" type="submit"><i class="far fa-address-card"></i>Crear
         tarjeta</button>
 
-      <div class="share__result">
+      <div class="share__result share__result--hidden js-shareResult">
         <p class="share__result__text">La tarjeta ha sido creada:</p>
         <p class="share__result__url">
           https://awesome-profile-card.com?id=A456DF0001
         </p>
 
-        <a class="share__result__button" href="#" title="Comparte en twitter"> <i class="fab fa-twitter"></i>Compartir
+        <a class="share__result__button"
+          href="https://twitter.com/intent/tweet?text=This%20is%20some%20text%40twitter%20www.twitter.com"
+          title="Comparte en twitter" target="_blank"> <i class="fab fa-twitter"></i>Compartir
           en twitter</a>
       </div>
     </div>
