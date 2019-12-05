@@ -15,12 +15,12 @@
   border-radius: 1.2rem;
   margin-top: 3rem;
   color: white;
-  background-color: $firstcolor;
+  background-color: $fourthcolor;
 
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
 
   &--active {
-    background-color: #d4d4d4;
+    background-color: $firstcolor;
   }
 }
 
