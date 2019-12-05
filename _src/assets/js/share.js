@@ -1,15 +1,14 @@
 'use strict';
 
-var submitButton = document.querySelector('.js-button');
-var responseURL = document.querySelector('.share__result__url');
-// var form = document.querySelector('form');
+let submitButton = document.querySelector('.js-button');
+let responseURL = document.querySelector('.share__result__url');
 
 submitButton.addEventListener('click', sendData);
 
 function sendData(event) {
   event.preventDefault();
-  var inputs = Array.from(containerForm.elements);
-  var json = getJSONFromInputs(inputs);
+  let inputs = Array.from(containerForm.elements);
+  let json = getJSONFromInputs(inputs);
   json.photo = picture;
   // Enviar la paleta seleccionada al servidor
   json.palette = document.querySelector(
