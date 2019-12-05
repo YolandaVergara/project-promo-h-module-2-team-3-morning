@@ -4,24 +4,18 @@ var submitButton = document.querySelector('.js-button');
 var responseURL = document.querySelector('.share__result__url');
 // var form = document.querySelector('form');
 
-submitButton.addEventListener('click', loadPhoto);
+submitButton.addEventListener('click', sendData);
 
-function sendData() {
+function sendData(event) {
+  event.preventDefault();
   var inputs = Array.from(containerForm.elements);
   var json = getJSONFromInputs(inputs);
-  json.photo = fr.result;
+  json.photo = picture;
   // Enviar la paleta seleccionada al servidor
   json.palette = document.querySelector(
     'input[name="color-options"]:checked'
   ).value;
   sendRequest(json);
-}
-
-function loadPhoto(event) {
-  event.preventDefault();
-  var myFile = document.querySelector('#img-selector').files[0];
-  fr.addEventListener('load', sendData);
-  fr.readAsDataURL(myFile);
 }
 
 function getJSONFromInputs(inputs) {
@@ -56,7 +50,7 @@ function showURL(result) {
     responseURL.innerHTML =
       "<a class='share__result__url' href=" +
       result.cardURL +
-      '>' +
+      ' target=_blank>' +
       result.cardURL +
       '</a>';
     shareEle.classList.remove('share__result--hidden');
