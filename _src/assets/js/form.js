@@ -89,24 +89,20 @@ linkedinEle.addEventListener("keyup", changeCard);
 githubEle.addEventListener("keyup", changeCard);
 
 //Validamos el formulario y añadimos la clase "active" cuando el formulario está cumplimentado
-const validation = function (event) {
+const containerForm = document.querySelector(".js-containerForm");
+const validation = function(event) {
   event.preventDefault();
-  const containerForm = document.querySelector(".js-containerForm");
   const check = containerForm.checkValidity();
   if (check === true) {
-    submitEl.classList.toggle("share__button--active");
-    shareEle.classList.toggle("share__result--hidden");
+    submitEl.classList.add("share__button--active");
+    shareEle.classList.remove("share__result--hidden");
   }
 };
-submitEl.addEventListener("click", validation);
+
+containerForm.addEventListener("change", validation);
 
 /*API
 Tenéis que crear un objeto con todos los campos que dice en la documentación
 
 Y luego hacer un fetch con verbo post, pasando ese objeto
 Y luego esperar la respuesta*/
-
-
-
-
-

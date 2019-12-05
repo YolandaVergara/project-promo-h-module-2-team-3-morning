@@ -17,6 +17,9 @@ const deleteData = function() {
   cardImage.style.backgroundImage = "url(../assets/images/placeholderImg.jpg)";
   imgPreview.style.backgroundImage = "url('')";
 
+  submitEl.classList.remove("share__button--active");
+  shareEle.classList.add("share__result--hidden");
+
   changeCard();
 };
 
