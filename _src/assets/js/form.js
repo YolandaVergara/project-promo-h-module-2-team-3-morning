@@ -96,6 +96,9 @@ const validation = function(event) {
   if (check === true) {
     submitEl.classList.add("share__button--active");
     shareEle.classList.remove("share__result--hidden");
+  } else {
+    submitEl.classList.remove("share__button--active");
+    shareEle.classList.add("share__result--hidden");
   }
 };
 
