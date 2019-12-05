@@ -95,17 +95,9 @@ const validation = function(event) {
   const check = containerForm.checkValidity();
   if (check === true) {
     submitEl.classList.add("share__button--active");
-    shareEle.classList.remove("share__result--hidden");
   } else {
     submitEl.classList.remove("share__button--active");
-    shareEle.classList.add("share__result--hidden");
   }
 };
 
 containerForm.addEventListener("change", validation);
-
-/*API
-Tenéis que crear un objeto con todos los campos que dice en la documentación
-
-Y luego hacer un fetch con verbo post, pasando ese objeto
-Y luego esperar la respuesta*/
