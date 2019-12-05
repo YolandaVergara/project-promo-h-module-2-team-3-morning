@@ -2,6 +2,7 @@
 
 let submitButton = document.querySelector('.js-button');
 let responseURL = document.querySelector('.share__result__url');
+let twitterURL = document.querySelector('.share__result__button');
 
 submitButton.addEventListener('click', sendData);
 
@@ -46,12 +47,12 @@ function sendRequest(json) {
 // Si los datos del servidor son correctos, obtenemos la URL y la pintamos
 function showURL(result) {
   if (result.success) {
-    responseURL.innerHTML =
-      "<a class='share__result__url' href=" +
-      result.cardURL +
-      ' target=_blank>' +
-      result.cardURL +
-      '</a>';
+    responseURL.href = result.cardURL;
+    responseURL.innerHTML = result.cardURL;
+
+    let twitterMsg = 'This is my awesome contact card!!';
+    twitterURL.href = `https://twitter.com/intent/tweet?text=${twitterMsg} ${result.cardURL}`;
+
     shareEle.classList.remove('share__result--hidden');
   } else {
     responseURL.innerHTML = 'ERROR:' + result.error;
