@@ -14,6 +14,8 @@
 
       @media all and (min-width: 768px) {
         width: 41.9rem;
+        padding-top:25.5rem;
+
       }
     }
   }
@@ -54,6 +56,8 @@
     @media all and (min-width: 768px) {
       width: 32.5rem;
       height: 8.6rem;
+      padding-top: 2.7rem;
+      margin-bottom: 18.6rem;
     }
 
     &__li {
@@ -100,6 +104,8 @@
     font-family: $fonttertiary;
     font-weight: 600;
     font-size: 1.6rem;
-    margin-top: 3.86rem;
+    @media all and (min-width: 768px) {
+      margin-bottom: 3rem;
+    }
   }
 }
