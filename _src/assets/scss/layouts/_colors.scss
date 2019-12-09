@@ -27,7 +27,6 @@
       color: $firstcolor;
     }
 
-
     &-title {
       padding-left: 1rem;
       font-family: $fonttertiary;
@@ -137,6 +136,7 @@
 /*Palette -option3*/
 
 .option3 {
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -161,6 +161,38 @@
 
   &__item3 {
     background: #a0c0cf;
+    width: 3rem;
+    height: 2.5rem;
+  }
+}
+
+// paleta 4
+
+.option4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.palette4 {
+  display: flex;
+  flex-direction: row;
+
+  &__item1 {
+    margin-left: 1rem;
+    background: $color1Palette4;
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  &__item2 {
+    background: $color2Palette4;
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  &__item3 {
+    background: $color3Palette4;
     width: 3rem;
     height: 2.5rem;
   }
@@ -219,5 +251,23 @@
 
   .card__item {
     border: solid 0.2rem $color3Palette3;
+  }
+}
+
+.js-card-palette4 {
+  .card__title {
+    color: $color1Palette4;
+  }
+
+  .card__link {
+    color: $color1Palette4;
+  }
+
+  .card__border-left {
+    border-left: 0.5rem solid $color2Palette4;
+  }
+
+  .card__item {
+    border: solid 0.2rem $color3Palette4;
   }
 }

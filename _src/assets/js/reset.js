@@ -27,6 +27,7 @@ const deleteData = function() {
 function colorReset() {
   card.classList.remove('js-card-palette2');
   card.classList.remove('js-card-palette3');
+  card.classList.remove('js-card-palette4');
   card.classList.add('js-card-palette1');
 }
 //Funcion que se ejecuta al pulsar reset
