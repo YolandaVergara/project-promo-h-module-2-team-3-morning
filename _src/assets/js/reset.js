@@ -14,8 +14,9 @@ const deleteData = function() {
   document.querySelector('.js-email').value = '';
   document.querySelector('.js-linkedin').value = '';
   document.querySelector('.js-github').value = '';
-  cardImage.style.backgroundImage = 'url(../assets/images/placeholderImg.jpg)';
-  profilePreviewImg.src = '../assets/images/placeholderImg.jpg';
+  document.querySelector('.js__profile-upload-btn').value = '';
+  cardImage.style.backgroundImage = "url('./assets/images/placeholderImg.jpg')";
+  profilePreviewImg.src = './assets/images/placeholderImg.jpg';
 
   submitEl.classList.remove('share__button--active');
   shareEle.classList.add('share__result--hidden');
