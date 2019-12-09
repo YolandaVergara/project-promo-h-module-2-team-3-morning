@@ -14,6 +14,8 @@
 
       @media all and (min-width: 768px) {
         width: 41.9rem;
+        margin-top:25.5rem;
+
       }
     }
   }
@@ -24,6 +26,7 @@
     font-weight: 900;
     color: $firstcolor;
     text-align: center;
+    
 
     @media all and (min-width: 768px) {
       font-size: 2.4rem;
@@ -49,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5rem 2rem 1rem 2rem;
+    padding: 1.5rem 2rem 0rem 2rem;
 
     @media all and (min-width: 768px) {
       width: 32.5rem;
@@ -100,6 +103,7 @@
     font-family: $fonttertiary;
     font-weight: 600;
     font-size: 1.6rem;
-    margin-top: 3.86rem;
+    margin: 18.6rem 0 3rem 0;
+
   }
 }
